@@ -1,0 +1,90 @@
+#nav {
+    height: 100vh;
+    background-color: rgba(33, 61, 6, 0.6);
+    padding: 0;
+    border-right: 3px solid black;
+}
+
+.nav-border {
+    border-bottom: 1.5px solid black;
+    text-align: center;
+}
+
+.nav-border:nth-child(1) .side-img {
+    width: 90%;
+    padding: 10px 15px;
+}
+
+.side-img {
+    width: 65%;
+    padding: 10px 15px;
+}
+
+.active {
+    background-color: lightgreen;
+}
+
+#content {
+    padding: 0;
+    background-color: white;
+}
+
+.top {
+    padding: 30px;
+    color: white;
+    background-color: rgb(91, 91, 255);
+}
+
+.top > h3 {
+    margin-left: 100px;
+}
+
+.setting {
+    background-color: lightgreen;
+    border-bottom: 1px solid black;
+}
+
+.setting-btn {
+    background-color: whitesmoke;
+}
+
+.setting-image {
+    width: 30px;
+    height: 100%;
+}
+
+.setting-left {
+    padding-left: 100px;
+}
+
+.setting-right {
+    padding-right: 100px;
+}
+
+.bin-name {
+    padding: 5px 0px 5px 50px;
+    background-color: lightgray;
+}
+
+.bin-status {
+    padding: 5px 0px 5px 50px;
+    background-color: whitesmoke;
+}
+
+.item-id {
+    color: royalblue;
+    font-weight: 500;
+}
+
+.item-status-img {
+    width: 15%;
+}
+
+.title {
+    background-color: rgba(192, 255, 133, 0.3);
+    border-bottom: 0.3px solid black;
+}
+
+.bin-status-title {
+    padding: 5px 0px 5px 50px;
+}

@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="vendor/boostrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styling.css">
+    <link rel="stylesheet" href="css/index.css">
+
+    <title>Treebin | Control Panel</title>
+</head>
+<body>
+    <div class="main-content container-fluid">
+        <div class="row">
+            <div id="nav" class="col-1">
+                <div class="nav-border">
+                    <img class="side-img" src="img/treebin.png" alt="treebin icon">
+                    <h4>TreeBin</h4>
+                </div>
+                <div class="nav-border active">
+                    <img class="side-img" src="img/battery.png" alt="">
+                </div>
+                <div class="nav-border">
+                    <img class="side-img" src="img/graph.png" alt="">
+                </div>
+                <div class="nav-border">
+                    <img class="side-img" src="img/map.png" alt="">
+                </div>
+                <div class="nav-border">
+                    <img class="side-img" src="img/repair.png" alt="">
+                </div>
+                <div class="nav-border">
+                    <img class="side-img" src="img/schedule.png" alt="">
+                </div>
+                <div class="nav-border">
+                    <img class="side-img" src="img/hr.png" alt="">
+                </div>
+            </div>
+
+            <div id="content" class="col-11">
+                <div class="top">
+                    <h3>Monitor Status</h3>
+                </div>
+                <div class="setting p-2">
+                    <div class="row w-100">
+                        <div class="setting-left col-6">
+                            <div class="w-100">
+                                <button class="setting-btn btn btn-outline-dark">
+                                    <img class="setting-image" src="img/printer.png" alt="">
+                                    print
+                                </button>
+                                <button class="setting-btn btn btn-outline-dark">
+                                    <img class="setting-image" src="img/export.png" alt="">
+                                    export
+                                </button>
+                            </div>
+                        </div>
+                        <div class="setting-right col-6 text-right">
+                            <button class="setting-btn btn btn-outline-dark">
+                                <img class="setting-image" src="img/sort.png" alt="">
+                                sort
+                            </button>
+                            <button class="setting-btn btn btn-outline-dark">
+                                <img class="setting-image" src="img/filter.png" alt="">
+                                filter
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container-fluid title">
+                    <div class="row bin-status-title">
+                        <div class="col-1">
+                            <h5>
+                                selection
+                            </h5>
+                        </div>
+
+                        <div class="col-1">
+                            <h5>
+                                ID
+                            </h5>
+                        </div>
+
+                        <div class="col-2">
+                            <h5>
+                                Status
+                            </h5>
+                        </div>
+                        
+                        <div class="col-2">
+                            <h5>
+                                Battery
+                            </h5>
+                        </div>
+
+                        <div class="col-3">
+                            <h5>
+                                Last Check
+                            </h5>
+                        </div>
+
+                        <div class="col-3">
+                            <h5>
+                                Location
+                            </h5>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="bin">
+                                <div class="bin-name">
+                                    <h6>Wincan Bin</h6>
+                                </div>
+                                <div class="bin-status">
+                                    <div class="row">
+                                        <div class="col-1">
+                                            <div>
+                                                <input type="checkbox" name="" id="">
+                                            </div>
+                                        </div>
+                                        <div class="col-1">
+                                            <div class="item-id">
+                                                118923
+                                            </div>
+                                        </div>
+                                        <div class="col-2">
+                                            <div>
+                                                <img class="item-status-img" src="img/lock.png" alt="">
+                                                Locked a month ago
+                                            </div>
+                                        </div>
+                                        <div class="col-2">
+                                            <div class="item-battery">
+                                                <img class="item-status-img" src="img/low-battery.png" alt="">
+                                                13%
+                                            </div>
+                                        </div>
+                                        <div class="col-3">
+                                            <div>
+                                                Last check a month ago
+                                            </div>
+                                        </div>
+                                        <div class="col-3">
+                                            <div>
+                                                Cheras, Taman Wincan
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="bin">
+                                <div class="bin-name">
+                                    <h6>Tony Bin</h6>
+                                </div>
+                                <div class="bin-status">
+                                    <div class="row">
+                                        <div class="col-1">
+                                            <div>
+                                                <input type="checkbox" name="" id="">
+                                            </div>
+                                        </div>
+                                        <div class="col-1">
+                                            <div class="item-id">
+                                                118924
+                                            </div>
+                                        </div>
+                                        <div class="col-2">
+                                            <div>
+                                                <img class="item-status-img" src="img/unlock.png" alt="">
+                                                Unlock a month ago
+                                            </div>
+                                        </div>
+                                        <div class="col-2">
+                                            <div class="item-battery">
+                                                <img class="item-status-img" src="img/full-battery.png" alt="">
+                                                90%
+                                            </div>
+                                        </div>
+                                        <div class="col-3">
+                                            <div>
+                                                Last check 3 hours ago
+                                            </div>
+                                        </div>
+                                        <div class="col-3">
+                                            <div>
+                                                Pahang, Taman Tony
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="bin">
+                                <div class="bin-name">
+                                    <h6>Ah Fai Bin</h6>
+                                </div>
+                                <div class="bin-status">
+                                    <div class="row">
+                                        <div class="col-1">
+                                            <div>
+                                                <input type="checkbox" name="" id="">
+                                            </div>
+                                        </div>
+                                        <div class="col-1">
+                                            <div class="item-id">
+                                                118925
+                                            </div>
+                                        </div>
+                                        <div class="col-2">
+                                            <div>
+                                                <img class="item-status-img" src="img/unlock.png" alt="">
+                                                Unlock 10 days ago
+                                            </div>
+                                        </div>
+                                        <div class="col-2">
+                                            <div class="item-battery">
+                                                <img class="item-status-img" src="img/medium-battery.png" alt="">
+                                                69%
+                                            </div>
+                                        </div>
+                                        <div class="col-3">
+                                            <div>
+                                                Last check 10 days ago
+                                            </div>
+                                        </div>
+                                        <div class="col-3">
+                                            <div>
+                                                Kuala Lumpur, Taman Ah Fai
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="bin">
+                                <div class="bin-name">
+                                    <h6>ZackRay Bin</h6>
+                                </div>
+                                <div class="bin-status">
+                                    <div class="row">
+                                        <div class="col-1">
+                                            <div>
+                                                <input type="checkbox" name="" id="">
+                                            </div>
+                                        </div>
+                                        <div class="col-1">
+                                            <div class="item-id">
+                                                118926
+                                            </div>
+                                        </div>
+                                        <div class="col-2">
+                                            <div>
+                                                <img class="item-status-img" src="img/repair.png" alt="">
+                                                Under Maintainace
+                                            </div>
+                                        </div>
+                                        <div class="col-2">
+                                            <div class="item-battery">
+                                                <img class="item-status-img" src="img/q-mark.png" alt="">
+                                                20%
+                                            </div>
+                                        </div>
+                                        <div class="col-3">
+                                            <div>
+                                                Last check 2 month ago
+                                            </div>
+                                        </div>
+                                        <div class="col-3">
+                                            <div>
+                                                Johor, Taman ZackRay
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>
