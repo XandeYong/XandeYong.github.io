@@ -1,0 +1,61 @@
+@prefix : <http://xandeyong.github.io/project/mediaoptimizer/ns/1.0/> .
+@prefix mo: <http://xandeyong.github.io/project/mediaoptimizer/ns/1.0/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix xmp: <http://ns.adobe.com/xap/1.0/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<http://xandeyong.github.io/project/mediaoptimizer/ns/1.0/>
+    dc:title "MediaOptimizer XMP Metadata Schema" ;
+    dc:creator "XandeYong" ;
+    xmp:CreateDate "2025-07-09T00:00:00Z" ;
+    rdfs:comment "Defines a custom XMP namespace for storing media optimization metadata such as formats, toolkits, file sizes, and optimization history." .
+
+mo:Optimizer_Toolkit
+    rdfs:label "Optimizer Toolkit" ;
+    rdfs:comment "Name of the optimizer toolkit used" ;
+    rdfs:range rdfs:Literal .
+
+mo:Optimizer_Version
+    rdfs:label "Optimizer Version" ;
+    rdfs:comment "Version of the optimizer toolkit" ;
+    rdfs:range rdfs:Literal .
+
+mo:Optimize_Date
+    rdfs:label "Optimize Date" ;
+    rdfs:comment "Date the media was optimized" ;
+    rdfs:range rdfs:Literal .
+
+mo:Optimize
+    rdfs:label "Optimize" ;
+    rdfs:comment "Indicates whether optimization was applied" ;
+    rdfs:range rdfs:Literal .
+
+mo:Optimize_Tool
+    rdfs:label "Optimize Tool" ;
+    rdfs:comment "Tool used to perform optimization (e.g., ffmpeg)" ;
+    rdfs:range rdfs:Literal .
+
+mo:Input_Format
+    rdfs:label "Input Format" ;
+    rdfs:comment "Original media format before optimization" ;
+    rdfs:range rdfs:Literal .
+
+mo:Output_Format
+    rdfs:label "Output Format" ;
+    rdfs:comment "Resulting media format after optimization" ;
+    rdfs:range rdfs:Literal .
+
+mo:Original_Size
+    rdfs:label "Original Size" ;
+    rdfs:comment "File size before optimization (in bytes)" ;
+    rdfs:range rdfs:Literal .
+
+mo:Optimized_Size
+    rdfs:label "Optimized Size" ;
+    rdfs:comment "File size after optimization (in bytes)" ;
+    rdfs:range rdfs:Literal .
+
+mo:Size_Reduction_Percent
+    rdfs:label "Size Reduction Percent" ;
+    rdfs:comment "Percentage of size saved during optimization" ;
+    rdfs:range rdfs:Literal .
