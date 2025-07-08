@@ -1,34 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>XandeYong | Media Optimizer | Metadata doc</title>
-    
-    <link rel="stylesheet" href="/vendor/bootstrap/css/bootstrap.css">
-    <link rel="stylesheet" href="/vendor/xande/styling.css">
-    <link rel="stylesheet" href="/css/master.css">
-    <link rel="stylesheet" href="/css/index.css" />
+  <meta charset="UTF-8">
+  <title>MediaOptimizer RDF Vocabulary</title>
+  <link rel="alternate" type="text/turtle" href="schema.ttl">
+  <link rel="alternate" type="application/rdf+xml" href="schema.rdf">
+  <style>
+    body { font-family: sans-serif; line-height: 1.6; max-width: 800px; margin: auto; padding: 2em; }
+    code { background: #f5f5f5; padding: 2px 4px; }
+  </style>
 </head>
 <body>
-    
-    <div id="wrapper" class="push-navbar">
-        <div class="container-fluid">
-            <!-- Navbar -->
-            <div w3-include-html="/base/navbar.html"></div> 
+  <h1>MediaOptimizer RDF Vocabulary (v1.0)</h1>
+  <p>This namespace defines RDF terms used to describe media optimization metadata (e.g., optimizer tool, version, file sizes, optimization results).</p>
 
-            <!-- Content -->
-            <div class="row background-image-1">Temp file, will update the metadata information once ready</div>
+  <h2>Namespace URI</h2>
+  <code>https://xandeyong.github.io/project/mediaoptimizer/ns/1.0/</code>
 
-        </div>
-    </div>
+  <h2>Available Formats</h2>
+  <ul>
+    <li><a href="schema.ttl">Turtle</a> (recommended)</li>
+    <li><a href="schema.rdf">RDF/XML</a></li>
+  </ul>
 
-    <!-- Footer & Script -->
-    <div w3-include-html="/base/footer.html"></div>
-    <div w3-include-html="/base/script.html"></div>
-    
+  <h2>Example Usage</h2>
+  <pre>
+@prefix mo: &lt;https://xandeyong.github.io/project/mediaoptimizer/ns/1.0/&gt; .
 
-    <script src="js/include-html.js"></script>
+&lt;file1.jpg&gt; mo:Optimizer_Tool "ffmpeg" ;
+             mo:Optimize "true" ;
+             mo:Original_Size "1543290" ;
+             mo:Optimized_Size "1023480" .
+  </pre>
 
+  <footer>
+    <p>Created by <strong>XandeYong</strong> – <a href="https://github.com/XandeYong/MediaOptimizer">Project Source</a></p>
+  </footer>
 </body>
 </html>
